@@ -1,0 +1,21 @@
+" General settings
+let mapleader=" "
+set scrolloff=5
+set incsearch
+set relativenumber
+set clipboard=unnamed
+set colorfulmodewidget
+map Q gq
+
+" Add custom plugins
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'preservim/nerdtree'
+
+map <leader>e :NERDTreeToggle<CR>
+
+map <leader>sv <Action>(SplitVertically) "[S]plit[V]ertical
+map <leader>sh <Action>(SplitHorizontally) "[S]split[H]orizontally
+map <leader>ff <Action>(SearchEverywhere) "[F]ind[F]iles
+map <leader>fs <Action>(FindInPath) "[F]ind[S]tring
+map <leader>t <Action>(ActivateTerminalToolWindow)
