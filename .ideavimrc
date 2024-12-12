@@ -17,16 +17,16 @@ map <leader>e :NERDTreeToggle<CR>
 map <leader>t <Action>(ActivateTerminalToolWindow)
 
 " Split view bindings
-map <leader>sv <Action>(SplitVertically) "[S]plit[V]ertical
-map <leader>sh <Action>(SplitHorizontally) "[S]split[H]orizontally
+map <leader>sv <Action>(SplitVertically)
+map <leader>sh <Action>(SplitHorizontally)
 
 " Search bindings (ripgrep like functionality)
-map <leader>ff <Action>(SearchEverywhere) "[F]ind[F]iles
-map <leader>fs <Action>(FindInPath) "[F]ind[S]tring
+map <leader>ff <Action>(SearchEverywhere)
+map <leader>fs <Action>(FindInPath)
 
 " Git bindings
-map <leader>gf <Action>(Git.Fetch) "[G]it[F]etch
-map <leader>gu <Action>(Vcs.UpdateProject) "[G]it[U]pdate (like recursive pull for all sub repos)
-map <leader>gb <Action>(Git.Branches) " [G]it[B]ranches
-map <leader>gc <Action>(CheckinProject) " [G]it[C]heckin
-map <leader>gp <Action>(Vcs.Push) " [G]it[P]ush
+map <leader>gf <Action>(Git.Fetch)
+map <leader>gu <Action>(Vcs.UpdateProject)
+map <leader>gb <Action>(Git.Branches)
+map <leader>gc <Action>(CheckinProject)
+map <leader>gp <Action>(Vcs.Push)
