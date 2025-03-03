@@ -30,3 +30,13 @@ map <leader>gu <Action>(Vcs.UpdateProject)
 map <leader>gb <Action>(Git.Branches)
 map <leader>gc <Action>(CheckinProject)
 map <leader>gp <Action>(Vcs.Push)
+
+" Harpoon
+nmap <leader>1 :action GotoHarpoon1<cr>
+nmap <leader>2 :action GotoHarpoon2<cr>
+nmap <leader>3 :action GotoHarpoon3<cr>
+nmap <leader>4 :action GotoHarpoon4<cr>
+nmap <leader>5 :action GotoHarpoon5<cr>
+
+nmap <leader>H :action ShowHarpoon<cr>
+nmap <leader>h :action AddToHarpoon<cr>
