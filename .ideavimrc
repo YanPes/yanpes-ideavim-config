@@ -5,7 +5,12 @@ set incsearch
 set relativenumber
 set clipboard=unnamed
 set colorfulmodewidget
+set hlsearch
+set smartcase
+set ignorecase
 map Q gq
+
+noremap <Esc> :nohlsearch<CR>
 
 " Add custom plugins
 Plug 'machakann/vim-highlightedyank'
@@ -15,14 +20,21 @@ Plug 'preservim/nerdtree'
 " Common bindings
 map <leader>e :NERDTreeToggle<CR>
 map <leader>t <Action>(ActivateTerminalToolWindow)
+map <C-H> <C-W>h
+map <C-L> <C-W>l
+map <C-J> <C-W>j
+map <C-K> <C-W>k
 
 " Split view bindings
 map <leader>sv <Action>(SplitVertically)
 map <leader>sh <Action>(SplitHorizontally)
+map <leader>sd <Action>(UnsplitAll)
 
 " Search bindings (ripgrep like functionality)
 map <leader>ff <Action>(SearchEverywhere)
-map <leader>fs <Action>(FindInPath)
+map <leader><leader> <Action>(SearchEverywhere)
+map <leader>/ <Action>(FindInPath)
+map <leader>fr <Action>(RecentFiles)
 
 " Git bindings
 map <leader>gf <Action>(Git.Fetch)
@@ -31,7 +43,12 @@ map <leader>gb <Action>(Git.Branches)
 map <leader>gc <Action>(CheckinProject)
 map <leader>gp <Action>(Vcs.Push)
 
-" Harpoon
+" Harpoon (https://plugins.jetbrains.com/plugin/20782-harpoonij)
+nmap <leader><C-1> :action SetHarpoon1<cr>
+nmap <leader><C-2> :action SetHarpoon2<cr>
+nmap <leader><C-3> :action SetHarpoon3<cr>
+nmap <leader><C-4> :action SetHarpoon4<cr>
+
 nmap <leader>1 :action GotoHarpoon1<cr>
 nmap <leader>2 :action GotoHarpoon2<cr>
 nmap <leader>3 :action GotoHarpoon3<cr>
